@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes Manager</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Notes Manager</h1>
+    </header>
+
+    <main>
+
+        <section class="create-note">
+            <h2>Create a New Note</h2> 
+          <form id="note-form">
+    <div class="form-group">
+        <label for="note-title">Title</label>
+        <input 
+            type="text" 
+            id="note-title" 
+            name="title" 
+            placeholder="Enter note title..." 
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="note-content">Content</label>
+        <textarea 
+            id="note-content" 
+            name="content" 
+            placeholder="Write your note here..." 
+            rows="5" 
+            required
+        ></textarea>
+    </div>
+
+    <button type="submit">Save Note</button>
+</form>
+        </section>
+
+        <section class="notes-list">
+              <h2>Your Notes</h2>
+          <div class="note-card">
+    <h3 class="note-card-title">Meeting Notes</h3>
+    <p class="note-card-content">Discussed project timeline and finalized the folder structure. Need to set up Express next session.</p>
+</div>
+
+<div class="note-card">
+    <h3 class="note-card-title">Shopping List</h3>
+    <p class="note-card-content">Milk, eggs, coffee beans, bread, and some snacks for late-night coding sessions.</p>
+</div>
+        </section>
+
+    </main>
+
+    <footer>
+       <p>&copy; 2026 My Notes Manager. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
