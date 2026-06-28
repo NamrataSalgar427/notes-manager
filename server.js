@@ -4,7 +4,7 @@ const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Path to our JSON "database"
 const dataPath = path.join(__dirname, 'data', 'notes.json');
