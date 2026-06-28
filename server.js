@@ -92,3 +92,13 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+function readNotes() {
+    try {
+        const data = fs.readFileSync(dataPath, 'utf8');
+        return JSON.parse(data);
+    } catch (error) {
+        // If file is missing or corrupted, return empty array
+        return [];
+    }
+}

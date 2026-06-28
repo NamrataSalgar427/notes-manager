@@ -153,3 +153,24 @@ footer {
 .delete-btn:hover {
     background: #dc2626;
 }
+
+/* Loading, empty, and error messages */
+.loading-msg,
+.empty-msg,
+.error-msg {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+    font-size: 15px;
+}
+
+.error-msg {
+    color: #ef4444;
+}
+
+/* Note date stamp */
+.note-card-date {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
